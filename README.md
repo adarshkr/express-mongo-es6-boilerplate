@@ -25,5 +25,5 @@ To get the Node server running locally:
 
 ## Application Structure
 
-environment.js - Projects config items are defined here (PORT, Mongo URI, etc..)
-test/ - This folder contains the project test cases.
+- environment.js - Projects config items are defined here (PORT, Mongo URI, etc..)
+- test/ - This folder contains the project test cases.
