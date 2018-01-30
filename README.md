@@ -23,4 +23,7 @@ To get the Node server running locally:
 - [joi](github.com/hapijs/joi) - Object schema description language and validator for JavaScript objects.
 - [cors](github.com/expressjs/cors) - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 
+## Application Structure
 
+environment.js - Projects config items are defined here (PORT, Mongo URI, etc..)
+test/ - This folder contains the project test cases.
