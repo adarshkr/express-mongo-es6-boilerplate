@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "es2015",
+        "stage-0"
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "es2015",
+                "stage-0"
+            ]
+        },
+        "production": {
+            "presets": ["minify"]
+          }
+    }
+}

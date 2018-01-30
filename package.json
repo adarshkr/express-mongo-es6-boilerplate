@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production npm run test && npm run clean:dist && babel src -d dist",
     "clean:dist": "shx rm -rf ./dist",
     "serve": "NODE_ENV=production node dist/index.js",
-    "test": "NODE_ENV=test mocha --compilers js:babel-register --require babel-polyfill"
+    "test": "NODE_ENV=test mocha --compilers js:babel-register --require babel-polyfill --exit"
   },
   "repository": {
     "type": "git",
