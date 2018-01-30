@@ -5,8 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "NODE_ENV=development nodemon src/index.js --exec babel-node --presets es2015,stage-0",
-    "build": "babel src -d dist",
-    "serve": "node dist/index.js",
+    "build": "NODE_ENV=production npm run test && npm run clean:dist && babel src -d dist",
+    "clean:dist": "shx rm -rf ./dist",
+    "serve": "NODE_ENV=production node dist/index.js",
     "test": "NODE_ENV=test mocha --compilers js:babel-register --require babel-polyfill"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
     "nodemon": "^1.14.11",
+    "shx": "^0.2.2",
     "supertest": "^3.0.0"
   }
 }
