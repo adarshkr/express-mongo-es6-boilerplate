@@ -25,5 +25,15 @@ To get the Node server running locally:
 
 ## Application Structure
 
-- environment.js - Projects config items are defined here (PORT, Mongo URI, etc..)
+- environment.js - Projects specific config's are defined here. (Like PORT, Mongo URI, etc..)
 - test/ - This folder contains the project test cases.
+- src/config  - This folder contains api specific config.
+- src/api/routes  - This folder contains the route definitions for our API.
+- src/api/controllers  - This folder contains the controllers definitions for our API.
+- src/api/models  - This folder contains the schema definitions for our Mongoose models.
+- src/api/utils  - This folder contains the utils definitions for our API.
+- src/api/middlewares  - This folder contains the middlewares definitions for our API.
+
+
+
+
