@@ -1,0 +1,50 @@
+{
+  "name": "express-mongodb-boilerplate",
+  "version": "1.0.0",
+  "description": "Express Mongodb (es6) Boilerplate",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon src/index.js --exec babel-node --presets es2015,stage-0",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js",
+    "test": "NODE_ENV=test mocha --compilers js:babel-register --require babel-polyfill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarshkr/express-mongo-es6-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshkr/express-mongo-es6-boilerplate.git/issues"
+  },
+  "homepage": "https://github.com/adarshkr/express-mongo-es6-boilerplate.git#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "http-status": "^1.0.1",
+    "joi": "^13.1.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0"
+  },
+  "keywords": [
+    "Node.js",
+    "Expressjs",
+    "node",
+    "express",
+    "es6"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.11",
+    "supertest": "^3.0.0"
+  }
+}
